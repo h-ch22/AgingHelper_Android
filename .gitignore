@@ -15,6 +15,7 @@
 local.properties
 AES256Util.kt
 /app/src/main/jni
+/app/src/main/assets
 *.pt
 *.ptl
 *.pth
