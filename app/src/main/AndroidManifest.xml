@@ -4,6 +4,7 @@
 
     <uses-feature android:name="android.hardware.camera.any"/>
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -16,7 +17,7 @@
         android:theme="@style/Theme.AgingHelper"
         android:largeHeap="true">
         <activity
-            android:name=".frameworks.ui.MainActivity"
+            android:name=".frameworks.ui.StartActivity"
             android:exported="true"
             android:theme="@style/Theme.AgingHelper">
             <intent-filter>
@@ -25,6 +26,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".frameworks.ui.MainActivity"/>
 
         <provider
             android:authorities="com.cj.aginghelper"

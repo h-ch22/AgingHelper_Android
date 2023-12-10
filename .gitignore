@@ -20,3 +20,4 @@ AES256Util.kt
 *.ptl
 *.pth
 google-services.json
+replacements.txt

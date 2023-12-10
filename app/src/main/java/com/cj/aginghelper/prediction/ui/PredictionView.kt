@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.AccessTime
+import androidx.compose.material.icons.rounded.AutoGraph
 import androidx.compose.material.icons.rounded.CheckCircle
 import androidx.compose.material.icons.rounded.PersonSearch
 import androidx.compose.material.icons.rounded.Share
@@ -61,6 +62,19 @@ fun PredictionView(){
                             Column(verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.Start) {
                                 Text(text = "이미지만으로 사람의 미래 모습 예측하기", fontWeight = FontWeight.SemiBold, color = accent)
                                 Text(text = "한 장의 이미지만으로 사람의 미래 모습을 확인할 수 있습니다.", color = gray, fontSize = 12.sp)
+                            }
+                        }
+
+                        Spacer(modifier = Modifier.height(20.dp))
+
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Icon(imageVector = Icons.Rounded.AutoGraph, contentDescription = null, tint = accent)
+
+                            Spacer(modifier = Modifier.width(10.dp))
+
+                            Column(verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.Start) {
+                                Text(text = "권장하는 이미지", fontWeight = FontWeight.SemiBold, color = accent)
+                                Text(text = "안경, 화장, 염색 등 본래 얼굴을 가리는 부가적인 요소를 제거한 사진을 이용하는 것을 권장합니다.", color = gray, fontSize = 12.sp, lineHeight = 15.sp)
                             }
                         }
 
